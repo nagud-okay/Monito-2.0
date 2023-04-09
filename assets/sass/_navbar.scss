@@ -1,0 +1,124 @@
+@import "./mixin";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  #check {
+    display: none;
+    position: fixed;
+  }
+  label {
+    display: none;
+    position: fixed;
+    i {
+      color: #667479;
+      font-size: 18px;
+    }
+  }
+  .navbar_links {
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        a {
+          font-family: "Signika Negative";
+          font-weight: 700;
+          font-size: 18px;
+          color: #003459;
+        }
+      }
+    }
+  }
+  .navbar_form {
+    form {
+      background: #fdfdfd;
+      border-radius: 46px;
+      padding: 15px 25px;
+      button {
+        border: none;
+        background-color: transparent;
+        color: #667479;
+        font-size: 18px;
+      }
+      input {
+        background-color: transparent;
+        border: none;
+        font-family: "Signika Negative";
+        font-weight: 700;
+        font-size: 18px;
+        color: #003459;
+        padding: 0 15px;
+      }
+    }
+  }
+  .navbar_lg {
+    button {
+      background: #003459;
+      border-radius: 57px;
+      padding: 15px 25px;
+      margin: 0 20px;
+      border: none;
+      font-family: "Signika Negative";
+      font-weight: 700;
+      font-size: 18px;
+      color: #fdfdfd;
+    }
+    select {
+      background-color: white;
+      border-radius: 57px;
+      border: none;
+      color: #667479;
+    }
+  }
+}
+
+@include responsive(desktop) {
+  .navbar_lg {
+    display: none;
+    position: fixed;
+  }
+}
+@include responsive(ipad) {
+  .navbar {
+    flex-direction: row-reverse;
+    label {
+      display: block;
+      position: unset;
+    }
+    .navbar_links {
+      position: fixed;
+      top: 0px;
+      left: -100%;
+      background-color: #003459;
+      width: 50vw;
+      height: 100vh;
+      transition: 0.5s ease-in-out;
+      ul {
+        margin: 50px 25px;
+        flex-direction: column;
+        gap: 15px;
+        li {
+          a {
+            color: white !important;
+          }
+        }
+      }
+    }
+    .navbar_form {
+      background-color: transparent;
+      form {
+        padding: 0;
+        input {
+          display: none;
+          position: fixed;
+          padding: 0;
+        }
+      }
+    }
+  }
+  #check:checked ~ .navbar_links {
+    left: 0;
+  }
+}
