@@ -504,5 +504,119 @@ a {
     font-size: 12px;
   }
 }
+.brends_text {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+.brends_text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.brends_text span h2 {
+  font-family: "Signika Negative";
+  font-weight: 100;
+  font-size: 22px;
+  color: #000000;
+}
+.brends_text span h1 {
+  font-family: "Signika Negative";
+  font-weight: 700;
+  font-size: 24px;
+  color: #003459;
+}
+.brends_text button {
+  background-color: transparent;
+  border: 1.5px solid #003459;
+  border-radius: 57px;
+  padding: 5px 15px;
+}
+
+.brends_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 0 200px;
+}
+
+@media (max-width: 820px) {
+  .brends {
+    display: none;
+    position: fixed;
+  }
+}
+.banner2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner2_text {
+  background-image: url(../../img/Banner2.png);
+  background-size: cover;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 25px;
+}
+.banner2_text h1 {
+  font-family: "Signika Negative";
+  font-weight: 800;
+  font-size: 52px;
+  text-transform: capitalize;
+  color: #003459;
+}
+.banner2_text h2 {
+  font-family: "Signika Negative";
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #003459;
+}
+.banner2_text p {
+  font-family: "Signika Negative";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #242b33;
+}
+.banner2_text span button:nth-of-type(1) {
+  text-align: center;
+  border: 1.5px solid #003459;
+  border-radius: 57px;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-family: "Signika Negative";
+  font-weight: 500;
+  font-size: 20px;
+  color: #003459;
+}
+.banner2_text span button:nth-of-type(1) i {
+  padding: 0 3px;
+}
+.banner2_text span button:nth-of-type(2) {
+  margin: 0 15px;
+  text-align: center;
+  border: none;
+  background-color: #003459;
+  border-radius: 57px;
+  padding: 10px 20px;
+  font-family: "Signika Negative";
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 820px) {
+  .banner2 {
+    display: none;
+    position: fixed;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

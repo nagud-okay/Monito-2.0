@@ -1,0 +1,45 @@
+@import "./mixin";
+
+.brends_text {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    h2 {
+      font-family: "Signika Negative";
+      font-weight: 100;
+      font-size: 22px;
+      color: #000000;
+    }
+    h1 {
+      font-family: "Signika Negative";
+      font-weight: 700;
+      font-size: 24px;
+      color: #003459;
+    }
+  }
+  button {
+    background-color: transparent;
+    border: 1.5px solid #003459;
+    border-radius: 57px;
+    padding: 5px 15px;
+  }
+}
+.brends_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 0 200px;
+}
+
+@include responsive(ipad) {
+  .brends {
+    display: none;
+    position: fixed;
+  }
+}
