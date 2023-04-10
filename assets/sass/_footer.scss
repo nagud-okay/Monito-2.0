@@ -1,0 +1,140 @@
+@import "./mixin";
+
+footer {
+  background: linear-gradient(
+    102.87deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+  );
+  margin-top: 50px;
+}
+
+.footer {
+  padding: 50px 0;
+  .footer_form {
+    background: #003459;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-family: "Signika Negative";
+      font-weight: 700;
+      font-size: 28px;
+      text-transform: capitalize;
+      color: #fdfdfd;
+    }
+    form {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      input {
+        padding: 10px 150px 10px 20px;
+        border: 1px solid #99a2a5;
+        border-radius: 8px;
+        background-color: transparent;
+        font-size: 18px;
+      }
+      button {
+        background: #003459;
+        border-radius: 8px;
+        border: none;
+        padding: 10px 20px;
+        font-family: Signika Negative;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fdfdfd;
+      }
+    }
+  }
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 2px solid #99a2a5;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      li {
+        a {
+          font-family: "Signika Negative";
+          font-weight: 500;
+          font-size: 16px;
+          color: #00171f;
+        }
+        i {
+          font-size: 28px;
+          color: #00171f;
+        }
+      }
+    }
+  }
+  .footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    p {
+      font-family: "Signika Negative";
+      font-weight: 500;
+      font-size: 14px;
+      color: #667479;
+    }
+    img {
+      width: 100px;
+    }
+    span {
+      font-family: "Signika Negative";
+      font-weight: 500;
+      font-size: 14px;
+      color: #667479;
+    }
+  }
+}
+
+@include responsive(ipad) {
+    .footer_form{
+        flex-direction: column;
+        gap: 15px;
+        br{
+            display: none;
+        }
+        form{
+            input{
+                padding: 10px 20px !important;
+                font-size: 12px;
+            }
+            button{
+                padding: 10px 75px !important;
+            }
+        }
+    }
+    .footer_links{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer_info{
+        flex-direction: column;
+        gap: 15px;
+        p{
+            display: none;
+            position: fixed;
+        }
+    }
+}
+@include responsive(phone) {
+    .footer_form{
+        form{
+            flex-direction: column;
+            button{
+                padding: 10px 20px !important;
+            }
+        }
+    }
+}

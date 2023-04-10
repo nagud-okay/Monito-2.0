@@ -73,12 +73,6 @@
   }
 }
 
-@include responsive(desktop) {
-  .navbar_lg {
-    display: none;
-    position: fixed;
-  }
-}
 @include responsive(ipad) {
   .navbar {
     flex-direction: row-reverse;
@@ -116,6 +110,10 @@
           padding: 0;
         }
       }
+    }
+    .navbar_lg {
+      display: none;
+      position: fixed;
     }
   }
   #check:checked ~ .navbar_links {
