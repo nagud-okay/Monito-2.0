@@ -1,0 +1,79 @@
+@import "./mixin";
+
+.dog {
+  margin: 50px 0;
+}
+.dog_box {
+  .dog_text {
+    h6 {
+      font-family: "Signika Negative";
+      font-weight: 500;
+      font-size: 16px;
+      color: #000000;
+    }
+    h5 {
+      font-family: "Signika Negative";
+      margin: 10px 0;
+      font-weight: 700;
+      font-size: 24px;
+      color: #003459;
+    }
+  }
+  .dog_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+    .dog_bord {
+      background: #fdfdfd;
+      box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      img {
+        padding: 5px;
+      }
+      h1 {
+        font-family: "Signika Negative";
+        padding: 5px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #00171f;
+      }
+      h3 {
+        font-family: "Signika Negative";
+        padding: 5px;
+        font-weight: 700;
+        font-size: 12px;
+        color: #667479;
+      }
+      h2 {
+        font-family: "Signika Negative";
+        padding: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #00171f;
+      }
+    }
+  }
+}
+
+@include responsive(ipad) {
+  .dog_img {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@include responsive(phone) {
+  .dog_bord {
+    h1 {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 10px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+}
