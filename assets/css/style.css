@@ -327,5 +327,110 @@ a {
     font-size: 12px;
   }
 }
+.banner1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner1_text {
+  background-image: url(../../img/Banner1.png);
+  background-size: cover;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  flex-direction: column;
+  gap: 15px;
+}
+.banner1_text h1 {
+  font-family: "Signika Negative";
+  font-weight: 800;
+  font-size: 52px;
+  text-transform: capitalize;
+  color: #003459;
+}
+.banner1_text h2 {
+  font-family: "Signika Negative";
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #003459;
+}
+.banner1_text p {
+  font-family: "Signika Negative";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: #242b33;
+}
+.banner1_text span button:nth-of-type(1) {
+  text-align: center;
+  border: 1.5px solid #003459;
+  border-radius: 57px;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-family: "Signika Negative";
+  font-weight: 500;
+  font-size: 20px;
+  color: #003459;
+}
+.banner1_text span button:nth-of-type(1) i {
+  padding: 0 3px;
+}
+.banner1_text span button:nth-of-type(2) {
+  margin: 0 15px;
+  text-align: center;
+  border: none;
+  background-color: #003459;
+  border-radius: 57px;
+  padding: 10px 20px;
+  font-family: "Signika Negative";
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 820px) {
+  .banner1 .banner1_text {
+    background-image: url(../../img/Banner\ ipad.png);
+    height: 600px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .banner1 .banner1_text p {
+    text-align: center;
+  }
+}
+@media (max-width: 432px) {
+  .banner1_text {
+    background-image: url(../../img/Banner\ phone.png) !important;
+  }
+  .banner1_text h1 {
+    font-size: 28px;
+  }
+  .banner1_text h2 {
+    font-size: 18px;
+  }
+  .banner1_text p {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .banner1_text span button:nth-of-type(1) {
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 10px !important;
+  }
+  .banner1_text span button:nth-of-type(1) i {
+    padding: 0;
+  }
+  .banner1_text span button:nth-of-type(2) {
+    padding: 5px 10px;
+    font-size: 10px !important;
+    font-weight: 300;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
