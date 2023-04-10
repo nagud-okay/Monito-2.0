@@ -5,54 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Monito</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="navbar">
-          <input id="check" type="checkbox" />
-          <label for="check"><i class="fa-solid fa-bars"></i></label>
-          <nav class="navbar_logo">
-            <img src="./img/Logo.png" alt="logo" />
+    <div class="background">
+      <header>
+        <div class="container">
+          <nav class="navbar">
+            <input id="check" type="checkbox" />
+            <label for="check"><i class="fa-solid fa-bars"></i></label>
+            <nav class="navbar_logo">
+              <img src="./img/Logo.png" alt="logo" />
+            </nav>
+            <nav class="navbar_links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Category</a></li>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./index.html">Contact</a></li>
+              </ul>
+            </nav>
+            <nav class="navbar_form">
+              <form>
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" placeholder="Search something here!" />
+              </form>
+            </nav>
+            <nav class="navbar_lg">
+              <button type="reset">Join the community</button>
+              <select>
+                <option value="English">Eng</option>
+                <option value="Russia">Rus</option>
+                <option value="Uzbek">Uzb</option>
+              </select>
+            </nav>
           </nav>
-          <nav class="navbar_links">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./index.html">Category</a></li>
-              <li><a href="./index.html">About</a></li>
-              <li><a href="./index.html">Contact</a></li>
-            </ul>
-          </nav>
-          <nav class="navbar_form">
-            <form>
-              <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </header>
+
+      <!-- Showcase -->
+      <section class="showcase">
+        <div class="container">
+          <div class="showcase_text">
+            <h1>One more friend</h1>
+            <h2>Thousands more fun!</h2>
+            <p>
+              Having a pet means you have more joy, a new friend, a happy<br />
+              person who will always be with you to have fun. We have 200+<br />
+              different pets that can meet your needs!
+            </p>
+            <span>
+              <button>
+                View Intro <i class="fa-sharp fa-regular fa-circle-play"></i>
               </button>
-              <input type="text" placeholder="Search something here!" />
-            </form>
-          </nav>
-          <nav class="navbar_lg">
-            <button type="reset">Join the community</button>
-            <select>
-              <option value="English">Eng</option>
-              <option value="Russia">Rus</option>
-              <option value="Uzbek">Uzb</option>
-            </select>
-          </nav>
-        </nav>
-      </div>
-    </header>
+              <button>Explore Now</button>
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- Showcase -->
+    </div>
   </body>
 </html>

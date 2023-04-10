@@ -1,3 +1,5 @@
+@import "./mixin";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +7,13 @@
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+}
+@include responsive(ipad){
+    .container{
+        width: 90%;
+    }
 }
 img{
     width: 100%;
@@ -16,4 +23,21 @@ ul{
 }
 a{
     text-decoration: none;
+}
+
+.background{
+    background-image: url(../../img/showcase.png);
+    background-size: cover;
+}
+@include responsive(ipad){
+    .background{
+        background-image: url(../../img/showcase_ipad.png );
+        height: 800px;
+    }
+}
+@include responsive(phone){
+    .background{
+        background-image: url(../../img/showcase_phone.png );
+        height: 800px;
+    }
 }

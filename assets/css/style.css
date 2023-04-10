@@ -5,10 +5,15 @@
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
+@media (max-width: 820px) {
+  .container {
+    width: 90%;
+  }
+}
 img {
   width: 100%;
 }
@@ -21,11 +26,28 @@ a {
   text-decoration: none;
 }
 
+.background {
+  background-image: url(../../img/showcase.png);
+  background-size: cover;
+}
+
+@media (max-width: 820px) {
+  .background {
+    background-image: url(../../img/showcase_ipad.png);
+    height: 800px;
+  }
+}
+@media (max-width: 432px) {
+  .background {
+    background-image: url(../../img/showcase_phone.png);
+    height: 800px;
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 .navbar #check {
   display: none;
@@ -81,8 +103,7 @@ a {
   color: #fdfdfd;
 }
 .navbar .navbar_lg select {
-  background-color: white;
-  border-radius: 57px;
+  background-color: transparent;
   border: none;
   color: #667479;
 }
@@ -123,6 +144,7 @@ a {
   }
   .navbar .navbar_form form {
     padding: 0;
+    background-color: transparent;
   }
   .navbar .navbar_form form input {
     display: none;
@@ -131,6 +153,106 @@ a {
   }
   #check:checked ~ .navbar_links {
     left: 0;
+  }
+}
+.showcase {
+  padding: 100px 0;
+}
+.showcase .showcase_text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.showcase .showcase_text h1 {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #002a48;
+}
+.showcase .showcase_text h2 {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  text-transform: capitalize;
+  color: #002a48;
+}
+.showcase .showcase_text p {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #242b33;
+  line-height: 25px;
+}
+.showcase .showcase_text span button:nth-of-type(1) {
+  text-align: center;
+  border: 1.5px solid #003459;
+  border-radius: 57px;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #003459;
+}
+.showcase .showcase_text span button:nth-of-type(1) i {
+  padding: 0 3px;
+}
+.showcase .showcase_text span button:nth-of-type(2) {
+  margin: 0 15px;
+  text-align: center;
+  border: none;
+  background-color: #003459;
+  border-radius: 57px;
+  padding: 10px 20px;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 820px) {
+  .showcase {
+    padding: 50px 0;
+  }
+  .showcase .showcase_text {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .showcase .showcase_text h1 {
+    font-size: 40px;
+  }
+  .showcase .showcase_text h2 {
+    font-size: 23px;
+  }
+  .showcase .showcase_text p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 432px) {
+  .showcase_text h1 {
+    font-size: 20px;
+  }
+  .showcase_text h2 {
+    font-size: 12px;
+  }
+  .showcase_text p {
+    font-size: 8px;
+    text-align: center;
+  }
+  .showcase_text span button:nth-of-type(1) {
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 15px !important;
+  }
+  .showcase_text span button:nth-of-type(1) i {
+    padding: 0;
+  }
+  .showcase_text span button:nth-of-type(2) {
+    padding: 5px 10px;
+    font-size: 15px !important;
+    font-weight: 300;
   }
 }
 

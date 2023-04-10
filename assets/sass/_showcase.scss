@@ -1,0 +1,104 @@
+@import "./mixin";
+
+.showcase {
+  padding: 100px 0;
+  .showcase_text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    h1 {
+      font-family: "Signika Negative";
+      font-weight: 800;
+      font-size: 60px;
+      text-transform: capitalize;
+      color: #002a48;
+    }
+    h2 {
+      font-family: "Signika Negative";
+      font-weight: 700;
+      font-size: 46px;
+      text-transform: capitalize;
+      color: #002a48;
+    }
+    p {
+      font-family: "Signika Negative";
+      font-weight: 500;
+      font-size: 16px;
+      color: #242b33;
+      line-height: 25px;
+    }
+    span button:nth-of-type(1) {
+      text-align: center;
+      border: 1.5px solid #003459;
+      border-radius: 57px;
+      background-color: transparent;
+      padding: 10px 20px;
+      font-family: "Signika Negative";
+      font-weight: 500;
+      font-size: 20px;
+      color: #003459;
+      i {
+        padding: 0 3px;
+      }
+    }
+    span button:nth-of-type(2) {
+      margin: 0 15px;
+      text-align: center;
+      border: none;
+      background-color: #003459;
+      border-radius: 57px;
+      padding: 10px 20px;
+      font-family: "Signika Negative";
+      font-weight: 500;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+@include responsive(ipad) {
+  .showcase {
+    padding: 50px 0;
+    .showcase_text {
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 23px;
+      }
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+}
+@include responsive(phone) {
+  .showcase_text {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 8px;
+      text-align: center;
+    }
+    span button:nth-of-type(1) {
+      padding: 5px 10px;
+      font-weight: 300;
+      font-size: 15px !important;
+      i{
+        padding: 0;
+      }
+    }
+    span button:nth-of-type(2) {
+      padding: 5px 10px;
+      font-size: 15px !important;
+      font-weight: 300;
+    }
+  }
+}

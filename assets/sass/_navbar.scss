@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
   #check {
     display: none;
     position: fixed;
@@ -66,8 +66,7 @@
       color: #fdfdfd;
     }
     select {
-      background-color: white;
-      border-radius: 57px;
+      background-color: transparent;
       border: none;
       color: #667479;
     }
@@ -110,6 +109,7 @@
       background-color: transparent;
       form {
         padding: 0;
+        background-color: transparent;
         input {
           display: none;
           position: fixed;
